@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Sign Up</title>
+<link href="css/style.css" type="text/css" rel="stylesheet"/>
+<link href="css/pages.css" type="text/css" rel="stylesheet"/>
+       <style type="text/css">
+            
+            /* Nicely lines up the labels. */
+            form label {display:inline-block; width:140px;}
+            form .line {clear:both;}
+            form .line.submit {text-align:right;}
+           
+           .line {
+           color:#B8623D;
+           margin-left:15px;
+           }
+           input{
+           margin:1%;
+           background-color: white;
+           color:#B8623D;}
+           
+           .submit input {
+           background-color:#B8623D;
+           color:white;
+           font-weight:bold;
+           width:140px;
+           height:40px;
+           float:right;
+           margin:10px;
+           }
+           
+           section h1{
+           margin-top:100px;
+           }
+           form p{
+           color:#0E6F87;}
+        </style>
+    
+
+</head>
+<body>
+<div id="wrap">
+<nav>
+<a href="index.html"><img alt="logo" src="images/LOGO.png"/></a>
+</nav>
+<section>
+
+       <form action="add.jsp" method="post">
+       		<table>
+       		<tr>
+       			<th colspan="2">Let us know about you :)</th>
+       		</tr>
+       		<tr>
+       			<td><label for="username" class="line">User name<span style="color:red"> *</span></label></td>
+       			<td><input type="text" name="username" pattern="[a-z,A-Z,0-9]{3,20}" autofocus required title="must be alphabetic in 3-20 chars,can contain numbers"/></td>
+       		</tr>
+       		
+       		<tr>
+       			<td><label for="pwd" class="line">Password<span style="color:red"> *</span></label></td>
+       			<td><input type="password" id="pwd" name="password" required/></td>
+       		</tr>
+       		
+       		<tr>
+       			<td><label for="fname" class="line">First Name<span style="color:red"> *</span></label></td>
+       			<td><input type="text" id="fname" name="firstname" pattern="[a-z,A-Z]{3,20}" required title="must be alphabetic in 3-20 chars"/></td>
+       		</tr>
+       		
+       		<tr>
+       			<td><label for="lname" class="line">Last Name<span style="color:red"> *</span></label></td>
+       			<td><input type="text" id="lname" name="lastname" pattern="[a-z,A-Z]{3,20}" required title="must be alphabetic in 3-20 chars"/></td>
+       		</tr>
+       		
+       		
+       		<tr>
+       			<td><label for="email" class="line">Email<span style="color:red"> *</span></label></td>
+       			<td><input type="email" id="email" placeholder="someone@xyz.com" required/></td>
+       		</tr>
+       		</table>
+			
+		     <div class="submit">
+		     <input type="reset" value="Reset" />
+			<input type="submit" value="Join Our Club :)" />
+		    </div>
+           <p>Note: Please make sure your details are correct before submitting form and that all fields marked with * are completed!.</p>
+            </form>
+            </section>
+<footer>
+<a href="mailto:nashwaay@gmail.com">Contact Us</a>
+<p>Copyrights</p>
+</footer>
+</div>
+</body>
+</html>

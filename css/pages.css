@@ -1,0 +1,36 @@
+@CHARSET "ISO-8859-1";
+
+nav{
+	height:100px;
+	
+}
+img{
+	width:150px;
+	height:150px;
+	position: relative;
+	top:-20px;;
+	
+	
+}
+
+form{
+	
+	float:right;
+	padding:4%;
+	padding-top:2%;
+}
+
+section{
+	height:700px;
+}
+footer{
+	height:200px;
+}
+input{
+background-color:#B8623D;
+color:white;
+font-weight:bold;
+width:140px;
+height:40px;
+border:none;
+}
